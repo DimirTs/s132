@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site</title>
+</head>
+<body>
+    <h2 id = "ti">Список гипеерссылок</h2>
+    <ul>
+        <li><a href ="http://kubsu.ru">Абсолютнуая гиперcсылка на сайт КубГУ http</li>
+            <li><a href ="https://kubsu.ru">Абсолютная ссылка на главную страницу сайта Kubsu в протоколе https</a> </li>
+            <li>
+                <a href="https://tabiturient.ru/logovuz/kubsu2.jpg">
+                <img src="C:\s0188132\Фото\kubsu2.jpg" width="100">
+              </a>
+            </li>
+            <li><a href ="https://kubsu.ru/fktipm">Сокращенная ссылка на внутреннюю страницу</a> </li>
+            <li><a href = "#t1">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href = "https://ru.wikipedia.org/w/index.php?title=Кубанский_государственный_университет&oldid=138894962">Ссылка с тремя параметрами URL</a></li>
+            <li><a href = "https://moodle.kubsu.ru/course/view.php?id=780">Ссылка с параметром id в URL</a></li>
+            <li><a href = "page.html"></a> Относительная ссылка на страницу в текущем каталоге</li>
+            <li><a href = "https://www.kubsu.ru/ru/fktipm?about">Относительная на страницу в каталоге about</a></li>
+            <li><a href = "Первая\1.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href = "Первая\Вторая\2.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+            <li><a href = "#">Контекстная в тексте абзаца</a></li>
+            <li><a href = "https://ru.wikipedia.org/w/index.php?title=%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82&oldid=138894962#:~:text=%5B1%5D-,%D0%A0%D0%B5%D0%B7%D0%BE%D0%BD%D0%B0%D0%BD%D1%81%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li><img src = "C:\s0188132\Фото\5ec53797a3d8f132c8742a80.jpg" widht="100" height="100" usemap="#map" alt="Ссылки из прямоугольных и круглых областей картинки (HTML-тег map)"></li>
+                <p><map name="map">
+                    <area shape="rect" alt="Первая ссылка в фото"
+                    coords="15,10,60,90"
+                    href = "https://isocpp.org">
+                    <area shape ="rect" alt="Вторая ссылка в фото"
+                    coords="70,10,255,165"
+                    href = "https://www.python.org">
+                </map></p>
+            <li><a href ="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a> </li>
+            <li><a href = "https://" rel = "nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href = "https://" rel = "noindex">Запрещенная для индексации поисковиками</a></li>
+            <li><a>Ссылки с title</a>
+                <ol>
+                    <li><a href = "https://github.com">Github</a></li>
+                        <title>Github</title>
+                    <li><a href ="https://www.apple.com">Apple</a></li>
+                        <title>Apple</title>
+                </a></li>
+                </ol>
+                <li><a href = "ftp://user:pass123@site.ru/Temp/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+            </li>
+            <p>
+                <label for = "name">Введите ФИО:</label>
+                <br>
+                <input type = "text" name="name" id = "name" required>
+            </p>
+            <p>
+                <label for = "number">Введите телефон:</label>
+                <br>
+                <input type = "number" name="number" id = "number" required>
+            </p>
+            <p>
+                <label for="emal">Введите email:</label>
+                <br>
+                <input type = "email" name = "email" id = "email" required>
+            </p>
+            <p>
+                <label for = "data">Введите дату рождения:</label>
+                <br>
+                <input type = "data" name = "data" id = "data" required>
+            </p>
+            <legend>Выберите пол</legend>
+            <label>
+                <input type = "radio" name="level">
+                МУЖ
+            </label>
+            <label>
+                <input type = "radio" name = "level">
+                ЖЕН
+            </label>
+            <label>
+                <input type = "radio" name="level">
+                ДРУГОЕ
+            </label>
+            <br>
+            <p>
+                <legend>Выберите любимый язык программирования:</legend>
+                <select>
+                    <option атрибуты>Не определился</option>
+                    <option атрибуты>Pascal</option>
+                    <option атрибуты>C</option>
+                    <option атрибуты>C++</option>
+                    <option атрибуты>JavaScript</option>
+                    <option атрибуты>PHP</option>
+                    <option атрибуты>Python</option>
+                    <option атрибуты>Java</option>
+                    <option атрибуты>Haskel</option>
+                    <option атрибуты>Clojure</option>
+                    <option атрибуты>Prolog</option>
+                    <option атрибуты>Scala</option>
+                    <option атрибуты>Иной</option>
+                </select>
+            </p>
+            <p>
+                <legend>Напишите автобиографию:</legend>
+                <textarea атрибуты>
+                    Печатать...
+                </textarea>
+            </p>
+            <p>
+                <label for = "kontract">С контрактом ознакомлен (а)</label>
+                <input type = "checkbox" атрибуты>
+            </p>
+            <button type = "submit">Сохранить</button>
+            </form>
+            </p>
+    </ul>
+</body>
+</html>
